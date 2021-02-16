@@ -82,11 +82,11 @@ class SshXBlock(XBlock):
                else : 
                    trimed = test[6:].strip() 
                if '/' in trimed  :
-                   print "\n Other Directory \n"
+                   print("\n Other Directory \n")
                    cutted = trimed.split('/')
                    lastPart = cutted[len(cutted)-1]
                    if cutted[0]=='':
-                       cutted[0]=u'/'; 
+                       cutted[0]='/'; 
                    firstPart = ""
                    for x in range(0, len(cutted)-1):
                        if x!=0:
